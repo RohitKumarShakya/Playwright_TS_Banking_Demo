@@ -1,6 +1,5 @@
-import { Page } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 import { BasePage } from './BasePage';
-import config from '../config.json';
 
 export class LoginPage extends BasePage {
   // Locators
@@ -13,9 +12,10 @@ export class LoginPage extends BasePage {
     super(page);
   }
 
-  // Navigate to the login page
+  // Navigate to the login page (index.html) and wait for the form to be ready
   async open(): Promise<void> {
-    await this.navigate(config.url);
+    await this.navigate(`${this.baseURL}index.html`);
+    await this.assertVisible(this.usernameInput);
   }
 
   // Enter username
@@ -44,5 +44,15 @@ export class LoginPage extends BasePage {
     await this.enterPassword(password);
     await this.selectApp(appName);
     await this.clickLogin();
+  }
+
+  // Assert username field has the expected value
+  async verifyUsernameValue(value: string): Promise<void> {
+    await expect(this.usernameInput).toHaveValue(value);
+  }
+
+  // Assert password field has the expected value
+  async verifyPasswordValue(value: string): Promise<void> {
+    await expect(this.passwordInput).toHaveValue(value);
   }
 }

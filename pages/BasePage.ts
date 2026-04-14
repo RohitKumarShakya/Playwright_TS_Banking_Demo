@@ -1,14 +1,16 @@
 import { Page, Locator, expect } from '@playwright/test';
+import config from '../config.json';
 
-export class BasePage {
+export abstract class BasePage {
   readonly page: Page;
+  protected readonly baseURL: string = config.url;
 
   constructor(page: Page) {
     this.page = page;
   }
 
-  // Navigate to a URL
-  async navigate(url: string): Promise<void> {
+  // Navigate to the app base URL (default) or a specific URL
+  async navigate(url: string = this.baseURL): Promise<void> {
     await this.page.goto(url);
   }
 
@@ -27,10 +29,15 @@ export class BasePage {
     await locator.selectOption(value);
   }
 
-  // Get trimmed text content of an element
+  // Get trimmed text content of an element (div, span, paragraph, etc.)
   async getTextContent(locator: Locator): Promise<string> {
     const text = await locator.textContent({ timeout: 10000 });
     return text?.trim() ?? '';
+  }
+
+  // Get value from an input field or select dropdown
+  async getInputValue(locator: Locator): Promise<string> {
+    return locator.inputValue({ timeout: 10000 });
   }
 
   // Assert element is visible

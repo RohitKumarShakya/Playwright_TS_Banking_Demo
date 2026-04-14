@@ -7,9 +7,11 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["node"]
   },
   "include": [
+    "playwright.config.ts",
     "tests/**/*.ts",
     "pages/**/*.ts"
   ]

@@ -1,0 +1,92 @@
+{
+  "cookies": [
+    {
+      "name": "__Secure-YNID",
+      "value": "17.YT=oX9kPFFXaHbMJEmZIog5bWUL72BEzmwIpP9vbTd4xMPp_MvJcOOAtijIacVvnA9uGSHi97r6OYzq-eYMpoGGmXeaMm8qxhEtt447P7WuRcya4zD5uIl4Vx3uS9KZngGGsU3Vb0qpfcX19m5SYZbS3O4fLjVWMZXyxQtIhh7el02elHb2aVEb-w8bJkuo2pHOd5QmTgugvRUPd6S3IQgOdfWTntEyw0gdDGYnlNsNGzGjk-2StbS-bFkSGBaTNZ2eOPZ2VKusfAe8TZHw7hUOlGovA1zRpFxvRBwc25giwHOYkwxByNaxLIWFXmBZUwnB4BHpIIj6AwyHq1bElWlZCA",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1791710854.33816,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://bakkappan.github.io",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "YSC",
+      "value": "SoFh2kSQkfE",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://bakkappan.github.io",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "value": "r0dQR7V6dFM",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1791710859.708298,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://bakkappan.github.io",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "VISITOR_PRIVACY_METADATA",
+      "value": "CgJJThIEGgAgXw%3D%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1791710859.708322,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://bakkappan.github.io",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "__Secure-ROLLOUT_TOKEN",
+      "value": "CMPSopmIltHGvQEQsYnh_YLtkwMYu4KigIPtkwM%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1791710859.702954,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://bakkappan.github.io",
+      "_crHasCrossSiteAncestor": true
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://bakkappan.github.io",
+      "localStorage": [
+        {
+          "name": "loggedIn",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.youtube.com",
+      "localStorage": [
+        {
+          "name": "ytidb::LAST_RESULT_ENTRY_KEY",
+          "value": "{\"data\":{\"hasSucceededOnce\":true},\"expiration\":1778750860080,\"creation\":1776158860080}"
+        },
+        {
+          "name": "yt-player-user-settings",
+          "value": "{\"data\":\"{\\\"484\\\":{\\\"stringValue\\\":\\\"\\\"}}\",\"expiration\":1778750856336,\"creation\":1776158856336}"
+        },
+        {
+          "name": "yt-icons-last-purged",
+          "value": "1772270855192"
+        }
+      ]
+    }
+  ]
+}
